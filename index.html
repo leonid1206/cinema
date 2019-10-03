@@ -30,6 +30,7 @@
                 <li>
                     <a href="#contacts">КОНТАКТЫ</a>
                 </li>
+            </ul>
         </nav>
         <sup>Ваш город:</sup>
         <u>Москва</u>
@@ -54,8 +55,7 @@
             Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
         </p>
     </div>
-    <div>
-        <a name="features"></a>
+    <div name="features">
         <h2>Почему мы?</h2>
         <div>
             <img src="images/b2_icon_1.png" alt="Большие экраны">
@@ -92,43 +92,74 @@
         </div>
     </div>
     <br />
-    <div>
-        <a name="buy"></a>
-        <h2>Выберите фильм</h2>
-        <table cellspacing="3" cellpadding="5" border="3">
-            <thead>
-                <th>Начало сеанса</th>
-                <th>Название фильма</th>
-                <th>Жанр</th>
-            </thead>
-            <tr>
-                <th>10:00</th>
-                <th>Человек-паук</th>
-                <th>фантастика, боевик, приключения</th>
-                </th>
-            <tr>
-                <th>12:00</th>
-                <th>Собачья жизнь 2</th>
-                <th>фэнтези, драма, комедия</th>
-                </th>
-            <tr>
-                <th>14:00</th>
-                <th>Люди в черном: Интернэшнл</th>
-                <th>фантастика, боевик, комедия</th>
-                </th>
-                <tfoot>
+    <div name="buy" class="movie-list">
+        <h2 class="movie-list__header">
+            Выберите фильм
+        </h2>
+        <div class="container">
+            <table class="movie-list__table">
+                <thead>
+                    <th>Начало сеанса</th>
+                    <th>Название фильма</th>
+                    <th>Жанр</th>
+                    <th>   </th>
+                </thead>
+                <tbody>
                     <tr>
-                        <td colspan="3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam
-                            rem repellendus
-                            veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur
-                            quaerat quam, qui
-                            quibusdam sunt!
+                        <td>10:00</td>
+                        <td>Человек-паук</td>
+                        <td>фантастика, боевик, приключения</td>
+                        <td><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="33px" height="33px">
+                           <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                           </svg>
                         </td>
-
                     </tr>
-                </tfoot>
-        </table>
+                    <tr>
+                        <td>12:00</td>
+                        <td>Собачья жизнь 2</td>
+                        <td>фэнтези, драма, комедия</td>
+                        <td><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="33px" height="33px">
+                           <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                           </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>История игрушек 4</td>
+                        <td>мультфильм, фэнтези, комедия</td>
+                        <td><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="33px" height="33px">
+                           <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                           </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>Люди в черном: Интернэшнл</td>
+                        <td>фантастика, боевик, комедия</td>
+                        <td><svg 
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="33px" height="33px">
+                           <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                            d="M16.505,32.994 C7.393,32.994 0.005,25.607 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.607 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.777 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                           </svg>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <br />
     <div class="grey">
@@ -231,10 +262,12 @@
     </footer>
     <form action="order.php">
         <div>
-            <input type="text" name="client_name" value="" required placeholder="Имя">
+            <label for="client_name">Введите свое имя</label>
+            <input type="text" id="client_name" required placeholder="Имя">
         </div>
         <div>
-            <input type="text" name="client_email" value="" required placeholder="Email">
+            <lable for="client_email">Введите свой Email</lable>
+            <input type="email" id="client_email" required placeholder="Email">
         </div>
         <div>
             <select>
@@ -253,10 +286,10 @@
         <div>
             <label for="first">Ряд1</label>
             <input id="first" type="radio" value="1">
-            <label for="first">Ряд2</label>
-            <input id="first" type="radio" value="2">
-            <label for="first">Ряд3</label>
-            <input id="first" type="radio" value="3">
+            <label for="second">Ряд2</label>
+            <input id="second" type="radio" value="2">
+            <label for="third">Ряд3</label>
+            <input id="third" type="radio" value="3">
         </div>
         <div>
             <textarea>
@@ -268,11 +301,13 @@
             <label for="agree">Согласен на обработку персональных данных</label>
         </div>
         <div>
-            <input type="file">
+            <label for="bonus">Купон на скидку</label>
+            <input id="bonus" type="file">
         </div>
         <div>
             <button type="submit">ЗАКАЗАТЬ</button>
         </div>
     </form>
 </body>
+
 </html>

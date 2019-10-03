@@ -1,6 +1,72 @@
-.grey {
-    background: grey;
+/* "сброс" свойств тегов по умолчанию */
+body, p, h1, h2, h3, h4{
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: border-box;
+    box-sizing: border-box;   /*чтобы не учитывались внутренние поля в общей ширине элемента*/
+    font-family: "Roboto", sans-serif;   /* вводим общий шрифт для всех элементов сразу */
 }
-.grey:hover {
-    background: #b55eb799;
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+.movie-list{
+    padding: 100px 0;
+}
+
+.movie-list__header{
+    font-size: 50px;
+    color: #252525;
+    font-weight: 700;
+    margin: 0 0 75px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1030px;
+    margin: auto;
+}
+
+.movie-list__table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.movie-list__table th{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    background: #a3cc40;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.movie-list__table td{
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.movie-list__table tr:nth-child(odd){
+    background: #373737;
+}
+
+.movie-list__table tr:nth-child(even){
+    background: #6c6c6c;
 }
