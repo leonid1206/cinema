@@ -1,5 +1,5 @@
 /* "сброс" свойств тегов по умолчанию */
-body, p, h1, h2, h3, h4{
+a, body, p, h1, h2, h3, h4{
     background: transparent;
     border: 0;
     margin: 0;
@@ -47,10 +47,14 @@ body, p, h1, h2, h3, h4{
     text-decoration: none;
 }
 
+.movie-list__table a{
+text-decoration: none;
+color: #fff;
+}
+
 .movie-list__table th{
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
     background: #a3cc40;
     padding: 20px 10px;
     text-align: center;
