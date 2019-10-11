@@ -44,6 +44,7 @@ body, p, h1, h2, h3, h4{
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .movie-list__table th{
@@ -60,13 +61,56 @@ body, p, h1, h2, h3, h4{
     font-weight: 400;
     color: #fff;
     padding: 20px 10px;
-    text-align: left;
 }
 
-.movie-list__table tr:nth-child(odd){
+th, td:nth-of-type(1){
+    width: 270px;
+    max-width: 270px;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+th, td:nth-of-type(2){
+    width: 315px;
+    max-width: 315px;
+    text-align: left;
+    word-spacing: 1px;
+}
+
+th, td:nth-of-type(3){
+    width: 315px;
+    max-width: 315px;
+    text-align: left;
+    word-spacing: 1px;
+}
+
+th, td:nth-of-type(4){
+    width: 130px;
+    max-width: 130px;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+tbody tr:nth-of-type(1n){
     background: #373737;
 }
 
-.movie-list__table tr:nth-child(even){
+tbody tr:nth-of-type(2n){
+    background: #4b4d4f;
+}
+
+tbody tr:nth-of-type(3n){
     background: #6c6c6c;
+}
+
+.triangle-up {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+.triangle-down {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid white;
 }
