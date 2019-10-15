@@ -8,9 +8,10 @@
     <meta name="author" content="">
     <title>Кинотеатр Иннополис</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" />
 </head>
 
 <body>
@@ -188,7 +189,7 @@
             unde
             velit veniam!
         </p>
-        <u>Получить подарок</u>
+        <a class="button" href="#" title="Получить подарок">Получить подарок</a>
     </div>
     <section id="films">
         <h2>Фильмы</h2>
@@ -256,54 +257,55 @@
             </a>
         </div>
     </footer>
-    <form action="order.php">
-        <div>
-            <label for="client_name">Введите свое имя</label>
-            <input type="text" id="client_name" required placeholder="Имя">
-        </div>
-        <div>
-            <lable for="client_email">Введите свой Email</lable>
-            <input type="email" id="client_email" required placeholder="Email">
-        </div>
-        <div>
-            <select>
-                <option>Место1</option>
-                <option>Место2</option>
-                <option>Место3</option>
-                <option>Место4</option>
-                <option>Место5</option>
-                <option>Место6</option>
-                <option>Место7</option>
-                <option>Место8</option>
-                <option>Место9</option>
-                <option>Место10</option>
-            </select>
-        </div>
-        <div>
-            <label for="first">Ряд1</label>
-            <input id="first" type="radio" value="1">
-            <label for="second">Ряд2</label>
-            <input id="second" type="radio" value="2">
-            <label for="third">Ряд3</label>
-            <input id="third" type="radio" value="3">
-        </div>
-        <div>
-            <textarea>
-                Введите текст
-            </textarea>
-        </div>
-        <div>
-            <input required id="agree" type="checkbox">
-            <label for="agree">Согласен на обработку персональных данных</label>
-        </div>
-        <div>
-            <label for="bonus">Купон на скидку</label>
-            <input id="bonus" type="file">
-        </div>
-        <div>
-            <button type="submit">ЗАКАЗАТЬ</button>
-        </div>
-    </form>
+    <section class="form_container">
+        <form action="order.php">
+            <div>
+                <label for="client_name">Укажите свое имя</label>
+                <input type="text" id="client_name" required placeholder="Имя">
+            </div>
+            <div>
+                <lable for="client_email">Введите свой Email</lable>
+                <input type="email" id="client_email" required placeholder="Email">
+            </div>
+            <div>
+                <label for="seat_select">Выберите место</label>
+                <select id="seat_select" required>
+                    <option>Место1</option>
+                    <option>Место2</option>
+                    <option>Место3</option>
+                    <option>Место4</option>
+                    <option>Место5</option>
+                    <option>Место6</option>
+                    <option>Место7</option>
+                    <option>Место8</option>
+                    <option>Место9</option>
+                    <option>Место10</option>
+                </select>
+            </div>
+            <div>
+                <input id="first" type="radio" value="1" name="variant">
+                <label for="first">Ряд1</label>
+                <input id="second" type="radio" value="2" name="variant">
+                <label for="second">Ряд2</label>
+                <input id="third" type="radio" value="3" name="variant">
+                <label for="third">Ряд3</label>
+            </div>
+            <div>
+                <textarea>Оставте свой комментарий</textarea>
+            </div>
+            <div>
+                <input required id="agree" type="checkbox">
+                <label for="agree">Согласен на обработку персональных данных</label>
+            </div>
+            <div>
+                <label for="bonus">Купон на скидку</label>
+                <input id="bonus" type="file">
+            </div>
+            <div>
+                <button type="submit">ЗАКАЗАТЬ</button>
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>
