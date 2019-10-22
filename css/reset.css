@@ -19,7 +19,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    font-family: "Roboto", sans-serif;
 }
 
 /* make sure to set some focus styles for accessibility */
