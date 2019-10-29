@@ -35,7 +35,7 @@ header {
     background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 109%;
+    background-size: cover;
     padding-top: 60px;
     padding-bottom: 366px;
     overflow: hidden;
@@ -46,25 +46,28 @@ header {
 
 .header__container {
     width: 1030px;
-    height: inherit;
     margin: 0 auto;
 }
 
+.header__top {
+    overflow: hidden;
+}
+
 .header__logo {
-    display: inline-block;
+    float: left;
     width: 211px;
     padding-left: 0;
 }
 
 .header__nav {
-    display: inline-block;
+    float: right;
     line-height: 45px;
-    margin-left: 205px;
+    margin-left: 100px;
 }
 
-.header__nav-item {
+.header__nav * {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 12px;
 }
 
 .header__nav-link {
@@ -98,21 +101,19 @@ header {
 
 /*welcome*/
 
-.welcome__container {
-    width: 1030px;
-    margin: 0 auto;
+.welcome {
     position: relative;
     /* задаем ориентир для блоков со свойством absolute*/
 }
 
-.welcome {
+.welcome__block {
     width: 455px;
-    padding: 36px 30px;
+    padding: 39px 30px;
     background: #fff;
     box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
     position: absolute;
     /*при задании свойства блок выпадает из потока и ищет "родителя" со свойством relative*/
-    top: -160px;
+    top: -162px;
     right: 0;
     z-index: 1;
     /*задаем приоритет отображения элемента по оси в сторону наблюдающего*/
@@ -139,24 +140,16 @@ header {
 
 /* benefits */
 
-.benefits__container {
-    width: 1030px;
-    margin: 0 auto;
-    position: relative;
-    /* задаем ориентир для блоков со свойством absolute*/
-}
-
-.benefits__text0 {
+.benefits__text {
     color: black;
     margin-top: 45px;
 }
 
 .benefits_row {
     margin-top: 130px;
-    overflow: hidden;
 }
 
-.benefits__col1 {
+.benefits__col {
     display: inline-block;
     margin-left: 60px;
     width: 300px;
@@ -164,7 +157,7 @@ header {
     text-align: center;
 }
 
-.benefits__col1:first-of-type {
+.benefits__col:first-of-type {
     margin-left: 0px;
 }
 
@@ -183,14 +176,14 @@ header {
     margin: auto;
 }
 
-.benefits__text1 {
+.benefits__col-text {
     margin-bottom: 20px;
     font-weight: 900;
     text-align: center;
     font-size: 35px;
 }
 
-.benefits__text2 {
+.benefits__text-bottom {
     font-size: 14px;
     font-weight: 200;
     color: black;
@@ -203,21 +196,12 @@ header {
 
 /* Оформление таблицы */
 
-.movie-list {
-    padding: 95px 0;
-}
-
 .movie-list__header {
     font-size: 50px;
     color: #252525;
     font-weight: 700;
-    margin: 0 0 80px;
+    margin-top: 109px;
     text-align: center;
-}
-
-.movie-list__container {
-    max-width: 1030px;
-    margin: auto;
 }
 
 .movie-list__table {
@@ -226,6 +210,7 @@ header {
     border-radius: 15px;
     overflow: hidden;
     text-decoration: none;
+    margin-top: 82px;
 }
 
 .movie-list__table a {
@@ -313,14 +298,15 @@ tbody tr:nth-of-type(3n) {
 .gift {
     background-color: #000000;
     background: url(../images/background_2.png) no-repeat top center / cover;
-    background-size: 108%;
-    height: 750px;
-    margin-top: 62px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 705px;
+    margin-top: 150px;
 }
 
-.gift__container {
-    max-width: 1030px;
-    margin: auto;
+.gift__block {
     position: relative;
 }
 
@@ -332,11 +318,11 @@ tbody tr:nth-of-type(3n) {
     width: 330px;
     height: 330px;
     z-index: 1;
-    top: -70px;
+    top: -67px;
 }
 
 .gift__description {
-    padding-top: 137px;
+    padding-top: 145px;
     position: absolute;
     width: 650px;
     right: 0px;
@@ -349,7 +335,7 @@ tbody tr:nth-of-type(3n) {
     color: #fff;
     line-height: 1.2;
     text-align: right;
-    margin-top: 60px;
+    margin-top: 58px;
 }
 
 input[type="button"]:hover,
@@ -372,7 +358,7 @@ button:active {
 /* movie, movie-gread */
 
 .movie-gread{
-    margin-top:37px;
+    margin-top: 88px;
 }
 
 .movie-gread__head {
@@ -380,7 +366,7 @@ button:active {
     margin-left: 27px;
 }
 
-.movie-gread__text0{
+.movie-gread__text{
     margin-left: 3px;
     margin-top: 40px;
     font-size: 14px;
@@ -389,17 +375,10 @@ button:active {
     line-height: 1.2;
 }
 
-.movie-gread__container {
-    max-width: 1030px;
-    margin: auto;
-    padding: 0 18px;
-}
-
 .movie-gread__flex {
     display: flex;
     flex-wrap: wrap;
-    margin: 0, -18px;
-    margin-top: 57px;
+    margin-top: 60px;
     margin-left: 10px;
 }
 
@@ -412,7 +391,7 @@ button:active {
     bottom: 0;
 }
 
-.movie-gread__inner1 {
+.movie-gread__inner {
     position: relative;
     overflow: hidden;
 }
@@ -425,21 +404,21 @@ button:active {
     bottom: -100%;
     background: rgba(144, 210, 61, 0.8);
     border-radius: 11px;
-    padding: 23px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     transition: .2s;
 }
 
-.movie-gread__text1 {
+.movie-gread__title {
     font-size: 35px;
     font-weight: 900;
     color: #fff;
-    margin: 0 0 10px;
+    margin: 0 0 11px;
 }
 
-.movie-gread__text2 {
+.movie-gread__title-description {
     font-size: 18px;
     color: #fff;
     flex: 1;
@@ -447,10 +426,10 @@ button:active {
 
 .movie-gread__hr {
     width: 80px;
-    height: 8px;
+    height: 6px;
     border: 0;
     box-shadow: none;
-    margin: 0 0 14px;
+    margin: 0 0 10px;
     background: #fff;
 }
 
@@ -458,6 +437,12 @@ button:active {
     fill: #fff;
     transition: .2s;
 }
+
+.movie-gread__svg[type="src"] {
+    fill: #fff;
+    transition: .2s;
+}
+
 
 .movie-gread__svg:hover {
     fill: green;
@@ -467,29 +452,52 @@ button:active {
     display: flex;
 }
 
-.movie-gread__link1 {
-    margin-left: 6px;
+.movie-gread__link {
+    margin-left: 4px;
+}
+
+.movie-gread__link:first-child {
+    margin-left: 8px;
 }
 
 /* /movie, movie-gread */
 
 /*map, footer*/
 
-.map{
-    margin-top: 75px;
+.map {
+    margin-top: 90px;
     margin-left: -40px;
 }
 
-.map__img{
+.map__img {
     text-align: center;
     width:102%;
 }
 
-.footer__targets{
-    margin-top: 5px;
+.footer__block {
+    margin-top: 8px;
     height:220px;
     background-color: #90d23d;
+    padding-top: 57px;
 }
 
+.footer__contacts {
+    text-align: center;
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.footer__links a {
+    width: 50px;
+    display: inline-block;
+}
+
+.footer__link {
+    margin-left: 12px;
+}
+
+.footer__link:first-of-type {
+    margin-left: 0;
+}
 
 /* /map, footer*/
